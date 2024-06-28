@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:site_name" content="Restfull API&#39;s">
+  <meta property="og:title" content="Shannz - APIs">
+  <meta property="og:url" content="https://shannz-rest-api">
+  <meta property="og:image" content="https://telegra.ph/file/e27761de17922f0ec86d1.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="300">
+  <meta property="og:image:alt" content="Shannz - APIs">
+ <title>Shannz Rest APIs</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('https://telegra.ph/file/5f413e53448b0224f9168.jpg'); background-size: cover;">
+ <header>
+ <div class="container">
+ <nav>
+ <a href="#" class="logo">Shannz APIs</a>
+ <div class="menu-toggle" onclick="toggleMenu()">
+ <div class="bar"></div>
+ <div class="bar"></div>
+ <div class="bar"></div>
+ </div>
+ <ul class="nav-links" id="navLinks">
+ <li><a href="/api">Docs</a></li>
+ <li><a href="/about">About</a></li>
+ <li><a href="/project">Project</a>
+ </ul>
+ </nav>
+ <div class="hero-content">
+ <h1>Welcome to Shannz Rest APIs</h1>
+ <p>Ambil Semuanya Hanya Dengan Result JSON.</p>
+ <a href="/api" class="btn">MULAI</a>
+ </div>
+ </div>
+ </header>
+ 
+ <footer>
+ <div class="container">
+ <p>&copy; 2024 Shannz-APIs. All rights reserved.</p>
+ </div>
+ </footer>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0366d6;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0356ad;
+}
+
+footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    color: whith;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+}
+    </style>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+      }
+      
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links.active');
+      
+        menuToggle.addEventListener('click', function() {
+          navLinks.classList.toggle('show');
+        });
+      });
+    </script>
+</body>
+</html>
